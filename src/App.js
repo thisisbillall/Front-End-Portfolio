@@ -8,6 +8,7 @@ import flutterLogo from "./images/flutterLogo.png";
 import reactLogo from "./images/reactLogo.png";
 
 function App() {
+
   const projectData =[
    {
     name:"Flappy X",
@@ -51,15 +52,22 @@ function App() {
       <header className="col">
         <nav>
           <ul>
-            <li>Home</li>
+            <a href="/"><li>Home</li></a>
             <a href="#projects"><li>Projects</li></a>
-            <li>Skills</li>
-            <li>Socials</li>
-            <li>More</li>
+            <a href="#skills"><li >Skills</li></a>
+            <a href="#socials"><li>Socials</li></a>
+            <a href="#more"><li>More</li></a>
           </ul>
         </nav>
       </header>
     </div>
+    <section id="about">
+      <div className="info">
+        <h5>Hii, my name is,</h5>
+        <h1 className="my-name">Mohammad Bilal!</h1>
+        <h2>I build things for Web & Mobile!</h2>
+      </div>
+    </section>
     <section id="projects">
     <strong className="sec-heading">PROJECTS</strong>
         <div class = "card-container">
@@ -77,6 +85,14 @@ function App() {
         </div>
         </div>
       </section>
+
+
+      <section id="skills">
+
+      </section>
+
+
+
     </>
   );
 }

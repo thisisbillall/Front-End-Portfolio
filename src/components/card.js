@@ -7,7 +7,7 @@ import './card.css';
 const Card = ({data}) => {
   const ref = useRef();
     return (  
-     <div style={{ width: '200px', height: '240px',backgroundColor: 'pink', borderRadius:"1rem"}} >
+     <div className="card-main" style={{ width: '200px', height: '240px',backgroundColor: 'pink', borderRadius:"1rem"}} >
               <Flippy 
                   flipOnHover={true} // default false
                   flipOnClick={true} // default false
@@ -17,7 +17,7 @@ const Card = ({data}) => {
                   // and other props, which will go to div
                   style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
         >
-          <FrontSide style={{backgroundColor: 'seashell', borderRadius:"1rem",overflow:"hidden"}} >
+          <FrontSide style={{backgroundColor: 'seashell', borderRadius:"1rem",overflow:"hidden",}} >
                   <strong>{data.name}</strong>
                   <img className="main-img" src={data.img}/>
           </FrontSide>

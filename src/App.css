@@ -22,22 +22,27 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
 body{
   background:#320d3e;
-
+  
 }
+
 .row{
   display: flex;
   margin-top: 1rem;
+  animation:navAnimation ease 2s;
 }
+@keyframes navAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
 .row #logo{
   color: rgb(148, 169, 173);
   margin-left: 1rem;
@@ -83,6 +88,15 @@ a{
   display: flex;
   margin-left: 2rem;
   margin-top: 2rem;
+  animation: cardAnimation ease 5s;
+}
+@keyframes cardAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 .card{
   flex: 30%;
@@ -92,4 +106,34 @@ a{
   color: rgb(148, 169, 173);
   margin-left: 1rem;
   cursor: pointer;
+}
+
+.info{
+  margin: 2rem;
+  text-align: center;
+}
+.info h5{
+  color: rgb(148, 169, 173);
+  font-weight: lighter;
+  font-size: 1rem;
+}
+
+.info h1{
+  font-size: 4rem;
+  color: seashell;
+  animation: textAnimation ease-in-out 3s;
+}
+@keyframes textAnimation {
+
+  0%{
+      opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+.info h2{
+  font-size: xx-large;
+  color: rgb(179, 175, 173);
 }
