@@ -1,3 +1,4 @@
+import React,{useState} from 'react';
 import './App.css';
 import Card from './components/card';
 import flapy  from "./images/flapy.png";
@@ -6,9 +7,13 @@ import recipo  from "./images/recipo.jpg";
 import quizzy  from "./images/quizzy.jpg";
 import flutterLogo from "./images/flutterLogo.png";
 import reactLogo from "./images/reactLogo.png";
+import mountain from "./images/mountain.png";
+import birds from "./images/birds.png";
 
 function App() {
-
+  const [offset,setOffset]=useState();
+  const handleScroll =()=>setOffset(window.pageYOffset);
+  window.addEventListener("scroll",handleScroll);
   const projectData =[
    {
     name:"Flappy X",
@@ -45,6 +50,7 @@ function App() {
   ];
   return (
     <>
+    
     <div className="row">
       <div className="col">
         <strong id="logo">LOGO</strong>
@@ -61,40 +67,77 @@ function App() {
         </nav>
       </header>
     </div>
-    <section id="about">
-      <div className="info">
-        <h5>Hii, my name is,</h5>
-        <h1 className="my-name">Mohammad Bilal!</h1>
-        <h2>I build things for Web & Mobile!</h2>
+
+    <div className="animation">
+      <div className="my-name" 
+      style={{
+        
+        top: `-${ + offset *0.1+'%'}`
+      
+      }}>
+          <center><h1>Mohammad Bilal!</h1></center>
       </div>
-    </section>
-    <section id="projects">
-    <strong className="sec-heading">PROJECTS</strong>
-        <div class = "card-container">
-        <div className="card">
-          <Card  data={projectData[0]}/>
-        </div>
-        <div className="card">
-          <Card data={projectData[1]}/>
-        </div>
-        <div className="card">
-          <Card data={projectData[2]}/>
-        </div>
-        <div className="card">
-          <Card data={projectData[3]}/>
-        </div>
-        </div>
-      </section>
+      
+      <img id="birds-img" src={birds}
+            
+            style={{
+              
+              top: `-${ + offset *0.1+'%'}`
+            
+            }}>
+      
+      </img>
+      <div className="i-build"
+            
+            style={{
+              
+              top: `-${ + offset *0.3+'%'}`
+            
+            }}>
+            
+      
+            <h2>I build things for Web & Mobile !</h2>
+      </div>
+      <img id="mountain-img" src={mountain}
+      ></img>
+    </div>
+
+    <div className="below-mountain">
+        {/* <section id="about">
+          <div className="info">
+            <h5>Hii, my name is,</h5>
+            <h1 className="my-name">Mohammad Bilal!</h1>
+            <h2>I build things for Web & Mobile!</h2>
+          </div>
+        </section> */}
+        <section id="projects">
+        <strong className="sec-heading">PROJECTS</strong>
+            <div class = "card-container">
+            <div className="card">
+              <Card  data={projectData[0]}/>
+            </div>
+            <div className="card">
+              <Card data={projectData[1]}/>
+            </div>
+            <div className="card">
+              <Card data={projectData[2]}/>
+            </div>
+            <div className="card">
+              <Card data={projectData[3]}/>
+            </div>
+            </div>
+          </section>
 
 
-      <section id="skills">
-
-      </section>
-
-
-
+          <section id="skills">
+            
+          </section>
+    </div>
     </>
+
   );
+
+        
 }
 
 export default App;

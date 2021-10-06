@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills&family=Ubuntu&display=swap');
 *{
   margin : 0;
+  padding: 0;
   font-family: 'Ubuntu', sans-serif;
 }
 .App {
   text-align: center;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .App-header {
@@ -23,10 +27,14 @@
 }
 
 
-
+nav{  
+  position: absolute;
+}
 body{
-  background:#320d3e;
-  
+  /* background:#320d3e; */
+  background-color: seashell;
+  overflow-x: hidden;
+  position: absolute ;
 }
 
 .row{
@@ -76,7 +84,7 @@ header ul li{
 }
 header ul li:hover{
 
-  background-color: #320d3e;
+  background-color: #053f3f;
   color: seashell;
 
 }
@@ -84,10 +92,51 @@ a{
   text-decoration: none;
   color: black;
 }
+nav{position: absolute;}
+.animation{
+  margin-top: 8rem;
+}
+.animation img{
+    width: 100%;
+    /* position: relative; */
+}
+#mountain-img{
+
+  position: relative;
+}
+#birds-img{
+  position: absolute;
+  margin-top: 5rem;
+
+} 
+.my-name{
+  position: absolute;
+  width: 100%;
+  margin-top: 30rem;
+  /* top: 19rem; */
+}
+.my-name h1{
+  font-size: 4rem;
+  color: rgb(20, 29, 31);
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+.i-build{
+  width: 100%;
+  /* position: absolute; */
+  text-align: center;
+  margin-top: 13rem;
+}
+.i-build h2{
+  color: rgb(148, 169, 173);
+  font-size: 2rem;
+  /* margin-top: 30rem; */
+
+} 
 .card-container{
   display: flex;
   margin-left: 2rem;
-  margin-top: 2rem;
   animation: cardAnimation ease 5s;
 }
 @keyframes cardAnimation {
@@ -108,21 +157,6 @@ a{
   cursor: pointer;
 }
 
-.info{
-  margin: 2rem;
-  text-align: center;
-}
-.info h5{
-  color: rgb(148, 169, 173);
-  font-weight: lighter;
-  font-size: 1rem;
-}
-
-.info h1{
-  font-size: 4rem;
-  color: seashell;
-  animation: textAnimation ease-in-out 3s;
-}
 @keyframes textAnimation {
 
   0%{
@@ -133,7 +167,7 @@ a{
   }
   
 }
-.info h2{
-  font-size: xx-large;
-  color: rgb(179, 175, 173);
+
+.below-mountain{
+  background-color: #053f3f;
 }

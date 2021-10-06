@@ -1,5 +1,5 @@
 .card-main{
-  box-shadow: pink;
+  background-color: rgb(132, 160, 160);
 }
 .bottom-sec{
   display: flex;
@@ -24,4 +24,9 @@ p{
 .tech-logo{
   width: 2rem;height: 2rem;
   margin-top: 0.5srem;
+
+}
+span{
+  background-color: #b3f7f7;
+
 }
