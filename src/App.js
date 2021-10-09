@@ -9,10 +9,20 @@ import flutterLogo from "./images/flutterLogo.png";
 import reactLogo from "./images/reactLogo.png";
 import mountain from "./images/mountain.png";
 import birds from "./images/birds.png";
+import reactjs from './images/reactjs.png';
+import flutterSkill from './images/flutter-skill.png';
+import mysql from './images/mysql.png';
+import node from './images/node.png';
+import mongodb from './images/mongo.png';
+import git  from './images/git.png';
+import github from './images/github1.png';
 
 function App() {
   const [offset,setOffset]=useState();
-  const handleScroll =()=>setOffset(window.pageYOffset);
+  function handleScroll(){
+    setOffset(window.pageYOffset);
+
+  }
   window.addEventListener("scroll",handleScroll);
   const projectData =[
    {
@@ -55,7 +65,7 @@ function App() {
       <div className="col">
         <strong id="logo">LOGO</strong>
       </div>
-      <header className="col">
+      <header>
         <nav>
           <ul>
             <a href="/"><li>Home</li></a>
@@ -98,20 +108,16 @@ function App() {
       
             <h2>I build things for Web & Mobile !</h2>
       </div>
-      <img id="mountain-img" src={mountain}
-      ></img>
+      <img id="mountain-img" src={mountain}/>
+        <p id="intro">
+          I Work with REACT JS and Flutter to build Web and Mobile Apps!<br/><br/>
+          Lets see some of my projects...
+        </p>
     </div>
 
     <div className="below-mountain">
-        {/* <section id="about">
-          <div className="info">
-            <h5>Hii, my name is,</h5>
-            <h1 className="my-name">Mohammad Bilal!</h1>
-            <h2>I build things for Web & Mobile!</h2>
-          </div>
-        </section> */}
         <section id="projects">
-        <strong className="sec-heading">PROJECTS</strong>
+        <strong className="sec-heading">&lt;PROJECTS&gt;</strong>
             <div class = "card-container">
             <div className="card">
               <Card  data={projectData[0]}/>
@@ -126,11 +132,45 @@ function App() {
               <Card data={projectData[3]}/>
             </div>
             </div>
+            <strong className="sec-heading">&lt;PROJECTS/&gt;</strong>
           </section>
 
 
           <section id="skills">
-            
+            <strong className="sec-heading">&lt;SKILLS && TOOLS&gt;</strong>
+              <div id="skills-container">
+                 <div className="single-skill">
+                   <img className="skills-img" src={reactjs}
+                   style={{height:"5rem"}}
+                   >
+                   </img>
+                   <img className="skills-img" src={flutterSkill}
+                   style={{height:"5rem"}}
+                   >
+                   </img>
+                   <img className="skills-img" src={node}
+                   style={{height:"5rem"}}
+                   >
+                   </img>
+                   <img className="skills-img" src={mysql}
+                   style={{height:"5rem"}}
+                   >
+                   </img>
+                   <img className="skills-img" src={mongodb}
+                   style={{height:"5rem"}}
+                   >
+                   </img>
+                   <img className="skills-img" src={git}
+                   style={{height:"5rem"}}
+                   >
+                   </img>
+                   <img className="skills-img" src={github}
+                   style={{height:"5rem"}}
+                   >
+                   </img>
+                 </div>
+              </div>
+            <strong className="sec-heading">&lt;SKILLS && TOOLS/&gt;</strong>
           </section>
     </div>
     </>
