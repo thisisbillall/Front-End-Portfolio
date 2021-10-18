@@ -3,8 +3,13 @@
   --sec-col:grey;
   --nav-font:1.5rem;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: black;
   color: var(--prim-col);
-  overflow:hidden;
+  overflow-x: hidden;
+  cursor: pointer;
+
 }

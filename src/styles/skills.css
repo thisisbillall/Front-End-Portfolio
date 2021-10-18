@@ -1,0 +1,40 @@
+.skills-container{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.tech-logo img{
+    float: right;
+    height: 25rem;
+    margin-right: 2rem;
+}
+.tech-details{
+    height: 100%;
+    width: 80%;
+    margin-left: 7rem;
+}
+.tech-details p{
+    text-align: justify;
+    font-size: 1.5rem;
+    color: grey;
+    float: right;
+}
+.tech-details a{
+    text-decoration: none;
+    color: var(--prim-col);
+}
+@media (max-width:1000px) {
+    .skills-container{
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .skills-container img{
+        margin: 0 auto;
+        height: 10rem;
+    }
+    .tech-details{
+       
+        margin-left: 2rem;
+    }
+}

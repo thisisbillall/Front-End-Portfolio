@@ -30,9 +30,17 @@ nav ul li a:hover{
     background-color:var(--prim-col);
     color:  black;
  }
- .fad{
-     font-size: 3rem;
- }
+ nav .menu-btn i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.menu-btn{
+    display: none;
+}
+#click{
+    display: none;
+
+}
  @media (max-width:730px) {
     
     nav{
@@ -40,8 +48,29 @@ nav ul li a:hover{
        
     }
      nav ul{
-         display: block;
-         justify-content: center;
+        background-color:black;
+        position: fixed;
+        top: 80px;
+        left:0px;
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+        left: -200%;
+        transition: all 0.8s ease;
+     }
+     
+     .menu-btn {
+       justify-content: right;
+       float: right;
+       display: block;
+       margin-right: 2rem;
+     }
+     #click:checked ~ .menu-btn i::before{
+         content: "\f00d";
+     }
+     #click:checked ~ ul{
+         left: 0%;
      }
      ul li{
          margin-top: 2rem;
