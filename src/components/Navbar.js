@@ -1,8 +1,8 @@
 import React from "react";
 import '../styles/navbar.css';
 import About from "./About";
-import Contact from "./Contact";
-import Projects from "./Projects";
+// import Contact from "./Contact";
+// import Projects from "./Projects";
 import Skills from "./Skills";
 
 const Navbar = () => {
@@ -33,14 +33,14 @@ const Navbar = () => {
         <section id="skills">
             <Skills/>
         </section>
-
+{/* 
         <section id="projects">
             <Projects/>
-        </section>
+        </section> */}
 
-        <section id="contact">
+        {/* <section id="contact">
             <Contact/>
-        </section>
+        </section> */}
     </>
      );
 }
