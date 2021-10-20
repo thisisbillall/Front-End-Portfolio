@@ -1,24 +1,31 @@
 import React from "react";
-import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import "../styles/card.css";
-const Card = () => {
+import Flippy, { FrontSide, BackSide } from 'react-flippy';
+
+const Card = ({proj}) => {
     return ( 
-        <div className="single-card">
-            <Flippy
-                flipOnHover={true} // default false
-                flipOnClick={true} // default false
-                flipDirection="horizontal"
-                style={{ width: '200px', height: '200px' }}
-            >
-               <FrontSide style={{ backgroundColor: '#41669d'}} >
-                        RICK <br />
-                </FrontSide>
-            
-                <BackSide style={{ backgroundColor: '#175852'}}>
-                        ROCKS
-                </BackSide>
-            </Flippy>
-        </div>
+    <div className="single-card">
+        <Flippy id="flippy-main"
+      flipOnHover={true} // default false
+      flipOnClick={true} // default false
+      flipDirection="horizontal" // horizontal or vertical
+      // if you pass isFlipped prop component will be controlled component.
+      // and other props, which will go to div
+      style={{ width: '200px', height: '200px' }} /// these are optional style, it is not necessary
+  >
+    <FrontSide id="front">
+        <img src={proj.img} alt="project-thumbnail"/>
+        <span>{proj.name}</span>
+    </FrontSide>
+    <BackSide id="back">
+        <p>{proj.desc}</p>
+    </BackSide>
+    <div className="proj-links">
+        <strong><a href={proj.demo} target="_blank" rel="noopener noreferrer">Demo</a></strong>
+        <strong><a href={proj.source} target="_blank" rel="noopener noreferrer">Source</a></strong>
+    </div>
+  </Flippy>
+    </div>
      );
 }
  

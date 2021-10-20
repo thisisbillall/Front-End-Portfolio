@@ -16,25 +16,19 @@ const Skills = () => {
             <div className="tech-logo">
                 <img src="/images/reactLogo.png" alt="react-logo"/>
             </div>
-
             <div className="tech-details">
                 <h2>FLUTTER</h2>
                 <p>
-                    For App development ,I am Exploring with FLUTTER: A DART framework developed 
-                    by Google.I use this framework for developing NATIVE apps which can be on 
-                    all the platform with a same codebase.I have built couple of basic Apps using
-                    FLUTTER like A Quiz App,Recipe App and a Game like Flappy Bird, you can look it
-                    <a href="https://github.com/thisisbillall/flappy_bird"> here</a>!
+                For App development ,I am Exploring with FLUTTER: A DART framework developed by Google.
+                I use this framework for developing NATIVE apps which can be on all the platform with
+                 a same codebase.I have built couple of basic Apps using FLUTTER like A Quiz App,
+                Recipe App and a Game like Flappy Bird, you can look it here!
+                <a href="https://github.com/thisisbillall/flappy_bird"> here</a>!
                 </p>
             </div>
             <div className="tech-logo">
                 <img src="/images/flutter-skill.png" alt="react-logo"/>
             </div>
-
-
-            
-            
-            
         </div>
      );
 }

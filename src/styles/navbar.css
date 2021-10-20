@@ -4,6 +4,12 @@ nav{
     justify-content: space-between;
     overflow-x: hidden;
 }
+.logo strong{
+    color: lightslategray;
+}
+.logo strong:hover{
+    color: var(--prim-col);
+}
 nav strong{
     margin-left: 1rem;
     color:var(--prim-col);
