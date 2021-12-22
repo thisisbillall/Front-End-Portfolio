@@ -1,100 +1,95 @@
-nav{
-    margin-top: 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    overflow-x: hidden;
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: hidden;
 }
-.logo strong{
-    color: lightslategray;
+.logo strong {
+  color: lightslategray;
 }
-.logo strong:hover{
-    color: var(--prim-col);
+.logo strong:hover {
+  color: var(--prim-col);
 }
-nav strong{
-    margin-left: 1rem;
-    color:var(--prim-col);
-    font-size: var(--nav-font);
+nav strong {
+  margin-left: 1rem;
+  color: var(--prim-col);
+  font-size: var(--nav-font);
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 1rem;
+  font-size: var(--nav-font);
+}
+nav ul li a {
+  text-decoration: none;
+  background-color: black;
+  color: var(--prim-col);
+  border: 2px solid var(--prim-col);
+  border-radius: 100px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 100px;
+}
+nav ul li a:hover {
+  background-color: var(--prim-col);
+  color: black;
+}
+nav .menu-btn i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.menu-btn {
+  display: none;
+}
+#click {
+  display: none;
+}
+@media (max-width: 730px) {
+  nav {
+    display: block;
   }
-nav ul{
-    display: flex;
-}
-nav ul li{
-    list-style: none;
-    margin-right: 1rem;
-    font-size: var(--nav-font);
-}
-nav ul li a{
-   text-decoration: none;
-   background-color:black;
-   color: var(--prim-col);
-   border: 2px solid var(--prim-col);
-   border-radius: 100px;
-   padding: 0px 10px 0px 10px;
-   border-radius: 100px;
-}
-nav ul li a:hover{
-    background-color:var(--prim-col);
-    color:  black;
- }
- nav .menu-btn i{
-    font-size: 30px;
-    cursor: pointer;
-}
-.menu-btn{
-    display: none;
-}
-#click{
-    display: none;
+  nav ul {
+    background-color: black;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    left: -200%;
+    transition: all 0.8s ease;
+  }
 
+  .menu-btn {
+    justify-content: right;
+    float: right;
+    display: block;
+    margin-right: 2rem;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+  }
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  ul li {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: var(--prim-col);
+    border: 2px solid var(--prim-col);
+    border-radius: 100px;
+    padding: 0px 10px 0px 10px;
+  }
+  nav ul li a:hover {
+    background-color: var(--prim-col);
+    color: black;
+  }
 }
- @media (max-width:730px) {
-    
-    nav{
-        display: block;
-       
-    }
-     nav ul{
-        background-color:black;
-        position: fixed;
-        top: 80px;
-        left:0px;
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-align: center;
-        left: -200%;
-        transition: all 0.8s ease;
-     }
-     
-     .menu-btn {
-       justify-content: right;
-       float: right;
-       display: block;
-       margin-right: 2rem;
-     }
-     #click:checked ~ .menu-btn i::before{
-         content: "\f00d";
-     }
-     #click:checked ~ ul{
-         left: 0%;
-     }
-     ul li{
-         margin-top: 2rem;
-         text-align: center;
-     }
-
-     nav ul li a{
-        text-decoration: none;
-        background-color:black;
-        color: var(--prim-col);
-        border: 2px solid var(--prim-col);
-        border-radius: 100px;
-        padding: 0px 10px 0px 10px;
-
-     }
-     nav ul li a:hover{
-        background-color:var(--prim-col);
-        color:  black;
-       
-      }
- }

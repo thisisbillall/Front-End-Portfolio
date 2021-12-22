@@ -1,16 +1,26 @@
-
-:root{
-  --prim-col:cyan;
-  --sec-col:grey;
-  --nav-font:1.5rem;
+:root {
+  --prim-col: cyan;
+  --sec-col: grey;
+  --nav-font: 1.5rem;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: black;
   color: var(--prim-col);
   overflow-x: hidden;
   cursor: pointer;
+}
 
+#skills-txt {
+  margin-top: 5rem;
+  color: lightslategray;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+@media (max-width: 600px) {
+  #skills-txt {
+    font-size: 1rem;
+  }
 }

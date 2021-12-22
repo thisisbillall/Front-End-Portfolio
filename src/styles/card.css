@@ -1,53 +1,53 @@
-#flippy-main{
-    height: 25rem;
-    margin: 0 auto;
-    margin-top: 4rem;
+#flippy-main {
+  height: 25rem;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
-#front{
-    background-color:steelblue;
-    height: 18rem;
-    width: 15rem;
+#front {
+  background-color: steelblue;
+  height: 18rem;
+  width: 15rem;
 }
-#front img{
-    height: 90%;
-    width: 100%;
-    border-radius: 2rem;
+#front img {
+  height: 90%;
+  width: 100%;
+  border-radius: 2rem;
 }
-#front span{
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 500;
+#front span {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
-#back{
-    background-color: lightslategray;
-    height: 18rem;
-    width: 15rem;
+#back {
+  background-color: lightslategray;
+  height: 18rem;
+  width: 15rem;
 }
-#back p{
-    color: black;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
+#back p {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.proj-links{
-    background-color: lightslategray;
-    width: 15rem;
-    height: 3rem;
-    display: flex;
-    justify-content: space-around;
+.proj-links {
+  background-color: lightslategray;
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
 }
-.proj-links strong{
-    font-weight: normal;
-    font-size: 1.2rem;
-    margin: 10px 0px 0px 1px;
-    cursor: pointer;
-    color: black;
+.proj-links strong {
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin: 10px 0px 0px 1px;
+  cursor: pointer;
+  color: black;
 }
-.proj-links a{
-    text-decoration: none;
-    color: black;
+.proj-links a {
+  text-decoration: none;
+  color: black;
 }
-.proj-links a:hover{
-    color: blanchedalmond;
+.proj-links a:hover {
+  color: blanchedalmond;
 }

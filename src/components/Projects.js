@@ -32,18 +32,22 @@ const Projects = () => {
             "name":"pixSearch",
             "desc":"Image Search and Download site developed using REACTJS,CSS and PIXABAY API no external DATABASE used!",
             "demo":"https://pixsearch1.netlify.app/",
-            "source":"https://github.com/thisisbillall/pixSearch",        
+            "source":"https://github.com/thisisbillall/pixsearch",        
         },
   ];
 
 
     return (  
+        <div className="proj-main">       
+         <strong id="proj-txt">Projects</strong>
         <div className="projects-container">
            <Card  proj={projData[0]}/>
            <Card  proj={projData[1]}/>
            <Card  proj={projData[2]}/>
            <Card  proj={projData[3]}/>
         </div>
+        </div>
+
     );
 }
  

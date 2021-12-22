@@ -1,0 +1,29 @@
+.exp-card-div {
+  justify-content: center;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 3rem;
+}
+.exp-card-div div {
+  text-align: center;
+}
+.comp-name-div h3 {
+  color: var(--sec-col);
+}
+.stack-date-div h1 {
+  color: var(--sec-col);
+}
+
+@media (max-width: 600px) {
+  .exp-card-div h1 {
+    font-size: 0.7rem;
+  }
+  .exp-card-div h3 {
+    font-size: 0.4rem;
+  }
+
+  .exp-card-div {
+    padding-left: 1rem;
+  }
+}

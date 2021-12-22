@@ -1,49 +1,35 @@
-.tech-logo img{
-    float: right;
-    height: 25rem;
-    margin-right: 2rem;
+.skills-main {
+  margin-top: 5rem;
 }
-
-.skills-container{
-    margin-top: 5rem;
+.skills-container {
+  margin-top: 3rem;
+  padding-left: 3rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.skills-container img {
+  height: 6rem;
+}
+#skills-txt {
+  margin-top: 5rem;
+  color: lightslategray;
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+@media (max-width: 600px) {
+  .skills-main {
+    margin-top: 3rem;
+  }
+  .skills-container {
+    margin-top: 2rem;
+    padding-left: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-container img {
+    height: 3rem;
+  }
+  #skills-txt {
+    font-size: 1rem;
+  }
 }
-
-.tech-details{
-    height: 100%;
-    width: 80%;
-    margin-left: 7rem;
-}
-.tech-details h2:hover{
-    color: lightslategray;
-}
-.skills-container img:hover{
-    transform: scale(0.9);
-}
-.tech-details p{
-    text-align: justify;
-    font-size: 1.5rem;
-    color: grey;
-    float: right;
-}
-.tech-details p a:hover{
-    color: lightslategray;
-}
-.tech-details a{
-    text-decoration: none;
-    color: var(--prim-col);
-}
-@media (max-width:1080px) {
-    .skills-container{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .skills-container img{
-        margin: 0 auto;
-        height: 10rem;
-    }
-    .tech-details{
-        margin-left: 2rem;
-    }
-} 
