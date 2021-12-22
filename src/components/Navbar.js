@@ -4,6 +4,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import Skills from "./Skills";
+import Socials from "./Socials";
 
 const Navbar = () => {
     return ( 
@@ -38,7 +39,7 @@ const Navbar = () => {
             <Projects/>
         </section>
         <section id="contact">
-            <Contact/>
+            <Socials/>
         </section>
 
     </>
