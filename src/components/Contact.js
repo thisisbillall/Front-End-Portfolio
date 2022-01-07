@@ -17,7 +17,8 @@ const Contact = () => {
                 <a href="https://www.instagram.com/thisisbillall/"  target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a href="https://drive.google.com/file/d/1Y8KUfiQHoqXokWmijYSQg3Al3nfjRk3w/view?usp=sharing"  target="_blank" rel="noopener noreferrer">
+//         https://drive.google.com/file/d/1Y8KUfiQHoqXokWmijYSQg3Al3nfjRk3w/view?usp=sharing
+                <a href="mailto:mohammadbilalakola@gmail.com"  target="_blank" rel="noopener noreferrer">
                     <i class="fa fa-envelope"></i>
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100052747481115"  target="_blank" rel="noopener noreferrer">
